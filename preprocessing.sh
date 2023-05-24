@@ -3,7 +3,7 @@ for DIR in {108年傷亡道路交通事故資料,109年傷亡道路交通事故�
 do 
     for File in $DIR/*.csv
     do
-        if [[ $File == *"交通事故資料_"* ]]; then
+        if [[ $File == *"交通事故資料"* ]]; then
             python data_preprocess.py $File
         fi
     done
